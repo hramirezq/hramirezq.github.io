@@ -8,45 +8,107 @@
     <title>Contacto</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/all.min.css">
     <link rel="stylesheet" href="/styles/estilopersonal.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
 </head>
 
 <body>
     <header class="container_nav">
-        <div class="logo">
-            <p>hramirezq</p>
-        </div>
-        <nav class="topnav">
-            <a href="/index.html">Home</a>
-            <a class="active" href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
+        <nav class="container_nav navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="col-4">
+                    <a class="navbar-brand" href="#">hramirezq</a>
+                </div>
+                <div class="col-8 nav_items">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse nav_items navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link" href="/pages/about.html">About</a>
+                            <a class="nav-link" href="/pages/contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <div class="main-container">
-        <section class="contact-section">
-            <h1>Contáctame</h1>
+        <div class="row" style="padding-bottom: 5%;">
+            <div class="col-lg-6 col-md-12">
+                <div class="row row-form">
+                    <div class="contact-form">
+                        <form>
+                            <h3>Formulario de contacto</h3>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nombres y apellidos</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese sus nombres y apellidos">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correo</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese su correo">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Celular</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese su número de celular">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Asunto</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese el asunto">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Mensaje</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese el mensaje">
+                            </div>
 
-            <div class="contact-container">
-                <div>
-                    <div>
-                        <a class="custom-button" href="mailto:hramirezq14@gmail.com">Email</a>
-                    </div>
-                    <div>
-                        <a class="custom-button" href="https://github.com/hramirezq">Github</a>
-                    </div>
-                    <div>
-                        <a class="custom-button" href="www.linkedin.com/in/hramirezq">Linkedin</a>
-                    </div>
-                    <div>
-                        <a class="custom-button" href="https://t.me/hramirezq">Telegram</a>
+                            <a class="custom-button" href="#">Enviar</a>
+                        </form>
                     </div>
                 </div>
-
-                <img src="/images/contact-image.png" alt="pasear_en_bicicleta" height="300">
             </div>
+            <div class="col-6 contact-links">
+                <div style="padding: 10% 5%;">
+                    <h4 style="color: #2b3239;font-weight: 600; padding-bottom: 5%;">Contáctame</h4>
 
-        </section>
+                    <div>
+                        <div class="container-item">
+                            <a href="mailto:hramirezq14@gmail.com">
+                                <i class="far fa-envelope"></i>
+                                Email
+                            </a>
+                        </div>
+                        <div class="container-item">
+                            <a href="https://github.com/hramirezq">
+                                <i class="fab fa-github"></i>
+                                Github
+                            </a>
+                        </div>
+                        <div class="container-item">
+                            <a href="www.linkedin.com/in/hramirezq">
+                                <i class="fab fa-linkedin-in"></i>
+                                Linkedin
+                            </a>
+                        </div>
+                        <div class="container-item">
+                            <a href="https://t.me/hramirezq">
+                                <i class="fab fa-telegram-plane"></i>
+                                Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <footer class="footer">
@@ -55,18 +117,20 @@
         </div>
         <div class="social_links">
             <a target="_blank" href="mailto:hramirezq14@gmail.com">
-                <span class="">Email</span>
+                <i class="far fa-envelope"></i>
             </a>
             <a target="_blank" href="www.linkedin.com/in/hramirezq">
-                <span class="">Linkedin</span>
+                <i class="fab fa-linkedin-in"></i>
             </a>
             <a target="_blank" href="https://github.com/hramirezq">
-                <span class=""></span>Github</a>
+                <i class="fab fa-github"></i>
+            </a>
             <a target="_blank" href="https://t.me/hramirezq">
-                <span class="">Telegram</span>
+                <i class="fab fa-telegram-plane"></i>
             </a>
         </div>
     </footer>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

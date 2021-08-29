@@ -8,33 +8,47 @@
     <title>Portafolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/all.min.css">
     <link rel="stylesheet" href="styles/estilopersonal.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
 </head>
 
 <body>
     <header class="container_nav">
-        <div class="logo">
-            <p>hramirezq</p>
-        </div>
-        <nav class="topnav">
-            <a class="active" href="/index.html">Home</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
+        <nav class="container_nav navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="col-4">
+                    <a class="navbar-brand" href="#">hramirezq</a>
+                </div>
+                <div class="col-8 nav_items">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse nav_items navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link" href="/pages/about.html">About</a>
+                            <a class="nav-link" href="/pages/contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <div class="main-container">
-        <section class="welcome-section">
-
-            <div class="welcome-text">
+    <div class="row welcome-section" style="margin-right: 0px;">
+        <div class="col-md-6 col-xs-12 welcome-text ">
+            <div style="padding-left: 5%;">
                 <h1>Hola,</h1>
                 <h2>Soy Angel Ramírez</h2>
                 <h3>Backend Developer</h3>
                 <a class="custom-button" href="/pages/contact.html">Contáctame</a>
             </div>
-            <div class="profile">
-                <img class="welcome-imagen" alt="welcome-image" src="/images/programing-boy.png" height=500>
-            </div>
-        </section>
+        </div>
+        <div class="col-md-6 col-xs-12 welcome-text ">
+            <img class="welcome-imagen" alt="welcome-image" src="/images/programing-boy.png" height=500>
+        </div>
     </div>
     <footer class="footer">
         <div class="copyright">
@@ -42,18 +56,20 @@
         </div>
         <div class="social_links">
             <a target="_blank" href="mailto:hramirezq14@gmail.com">
-                <span class="">Email</span>
+                <i class="far fa-envelope"></i>
             </a>
             <a target="_blank" href="www.linkedin.com/in/hramirezq">
-                <span class="">Linkedin</span>
+                <i class="fab fa-linkedin-in"></i>
             </a>
             <a target="_blank" href="https://github.com/hramirezq">
-                <span class=""></span>Github</a>
+                <i class="fab fa-github"></i>
+            </a>
             <a target="_blank" href="https://t.me/hramirezq">
-                <span class="">Telegram</span>
+                <i class="fab fa-telegram-plane"></i>
             </a>
         </div>
     </footer>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

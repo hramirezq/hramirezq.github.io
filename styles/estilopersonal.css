@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     background-image: url("/images/landing-content-background-img.jpg");
 }
 .topnav {
@@ -15,32 +15,36 @@ body {
 }
 
 .container_nav {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
+    background-color: #fff !important;
     box-shadow: 0 4px 46px rgba(0,0,0,.1);
 }
 
-.logo p {
-    color: #003F63;
+.nav_items{
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-brand {
+    color: #003F63 !important;
     font-weight: 800;
 }
 
-.topnav a {
-    color: #303030;
+.nav-link {
+    color: #303030 !important;
     text-align: center;
     padding: 12px 16px;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin: 0 Im !important;
 }
   
-.topnav a:hover {
-    color: #003F63;
+.nav-link:hover {
+    color: #003F63 !important;
 }
   
-.topnav a.active {
-    color: #003F63;
+.navbar-nav a.active {
+    color: #003F63 !important;
 }
 
 .footer {
@@ -80,11 +84,12 @@ body {
 
 .welcome-section{
     padding-top: 7%;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
     align-items: center;
-    flex-direction: row;
+}
+
+.welcome-text{
+  display: flex;
+  justify-content: center;
 }
 
 .welcome-text h1{
@@ -149,6 +154,9 @@ body {
     padding-bottom: 0.5%;
 }
 
+.carousel-caption h5{
+  text-shadow: #000 2px 3px 5px;
+}
 /* card-images */
 .container-images{
     display: flex;
@@ -253,3 +261,52 @@ body {
   .contact-container div{
     margin: 20px 0;
   }
+
+  .contact-form{
+    max-width: 70% !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px 0px;
+    background-color: #fff;
+  }
+
+  .contact-form form{
+   padding: 10% 6%;
+  }
+  .contact-form form .form-group{
+    padding-bottom: 6%;
+  }
+
+.contact-form h3{
+  font-size: 30px;
+  margin: 0 !important;
+  font-weight: 800;
+  color: #16B394;
+  text-align: center;
+  padding-bottom: 8%;
+  }
+
+  .contact-form a{
+    text-align: center;
+  }
+
+.contact-links a{
+    color: #16b394;
+    text-decoration: none;
+  }
+
+.container-item{
+  padding-bottom: 1%;
+}
+
+.row-form{
+  justify-content: end;
+}
+
+@media (max-width: 1400px) {
+  .contact-form{
+    max-width: 90% !important;
+  }
+  .row-form{
+    justify-content: center;
+  }
+  
+}
