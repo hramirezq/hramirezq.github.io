@@ -1,6 +1,9 @@
 window.onload = function () {
     let pullButton = document.getElementById("pull")
     pullButton.onclick = triggerPull;
+
+    let colorButton = document.getElementById("color")
+    colorButton.onclick = color;
 };
 
 function triggerPull() {
@@ -97,4 +100,19 @@ function validate(fullname, date) {
         alert("Ingrese los nombres")
     }
     return isValid
+}
+
+// boton colorear
+
+function color() {
+    let spans = document.querySelectorAll('.input-group-text');
+    spans.forEach(function (element) {
+        if (element.classList.contains("addon-red")) {
+            element.classList.remove('addon-red');
+            element.classList.add("addon-blue");
+        } else {
+            element.classList.remove('addon-blue');
+            element.classList.add("addon-red");
+        }
+    });
 }
