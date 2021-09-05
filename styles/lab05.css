@@ -1,0 +1,40 @@
+.lab-05-container{
+    background-color: #c8f5e8;
+    padding: 1%;
+}
+
+.addon-blue{
+    background-color: #1d6fa9 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.addon-red{
+    background-color: #b74919 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.border-red{
+    border: 1px solid #b74919 !important;
+}
+
+.button-lab-yellow{
+    background-color: #f19d19 !important;
+    border: 1px solid #fff;
+    color: #fff !important;
+}
+
+.button-lab-red{
+    background-color: #b74919 !important;
+    border: 1px solid #fff;
+    color: #fff !important;
+}
+
+.width-200{
+    width: 200px;
+}
+
+.output-container .input-group-prepend{
+    width: 200px;
+}

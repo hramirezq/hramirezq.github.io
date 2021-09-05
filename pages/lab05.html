@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/all.min.css">
     <link rel="stylesheet" href="/styles/estilopersonal.css">
+    <link rel="stylesheet" href="/styles/lab05.css">
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
 </head>
 
@@ -40,95 +41,100 @@
     </header>
 
     <div class="main-container">
-        <div class="row" style="padding-bottom: 5%;">
-            <div class="text-align-center">
-                <h3>LAB 05: TALLER DE JAVASCRIPT</h3>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="row">
-                    <div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="fullnameAddon">Apellidos y nombres:</span>
+        <div class="lab-05-container">
+            <div class="row" style="padding-bottom: 5%;">
+                <h3 class="text-center font-weight-700">LAB 05: TALLER DE JAVASCRIPT</h3>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend width-200">
+                                    <span class="input-group-text addon-blue" id="fullnameAddon">Apellidos y
+                                        nombres:</span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm border-red" id="fullname"
+                                    aria-describedby="fullnameAddon" placeholder="Ingrese sus nombres y apellidos">
                             </div>
-                            <input type="text" class="form-control form-control-sm" id="fullname"
-                                aria-describedby="fullnameAddon" placeholder="Ingrese sus nombres y apellidos">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend width-200">
+                                    <span class="input-group-text addon-blue" id="dateBirthAddon">Fecha de
+                                        nacimiento:</span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm border-red" id="dateBirth"
+                                    aria-describedby="dateBirthAddon" placeholder="Ingrese su fecha de nacimiento">
+                            </div>
                         </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="dateBirthAddon">Fecha de nacimiento:</span>
-                            </div>
-                            <input type="text" class="form-control form-control-sm" id="dateBirth"
-                                aria-describedby="dateBirthAddon" placeholder="Ingrese su fecha de nacimiento">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6" style="text-align: end;">
+                            <button id="pull" type="button" class="btn btn-warning button-lab-yellow">Extraer</button>
+                        </div>
+                        <div class="col-6">
+                            <button id="color" type="button" class="btn btn-danger button-lab-red">Colorear</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-6">
-                        <button id="pull" type="button" class="btn btn-warning">Extraer</button>
+            <div class="row output-container" style="padding-bottom: 5%;">
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  addon-blue" id="firstSurnameAddon">Apellidos
+                                        paterno:</span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm border-red" id="secondSurname"
+                                    aria-describedby="firstSurnameAddon">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  addon-blue" id="secondSurnameAddon">Apellidos
+                                        materno:</span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm border-red" id="secondSurname"
+                                    aria-describedby="secondSurnameAddon">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text addon-blue" id="nameAddon">Nombres:</span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm border-red" id="name"
+                                    aria-describedby="nameAddon">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <button id="color" type="button" class="btn btn-danger">Colorear</button>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text addon-red" id="lengthSurnameAddon">Longitud del
+                                    apellido:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm border-red" id="lengthSurname"
+                                aria-describedby="lengthSurnameAddon">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text addon-red" id="ageAddon">Edad:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm border-red" id="age"
+                                aria-describedby="ageAddon">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text addon-red" id="monthString">Mes en letras:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm border-red" id="monthString"
+                                aria-describedby="basic-addon3">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" style="padding-bottom: 5%;">
-            <div class="col-lg-6 col-md-12">
-                <div class="row">
-                    <div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="firstSurnameAddon">Apellidos paterno:</span>
-                            </div>
-                            <input type="text" class="form-control form-control-sm" id="secondSurname"
-                                aria-describedby="firstSurnameAddon">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="secondSurnameAddon">Apellidos materno:</span>
-                            </div>
-                            <input type="text" class="form-control form-control-sm" id="secondSurname"
-                                aria-describedby="secondSurnameAddon">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="nameAddon">Nombres:</span>
-                            </div>
-                            <input type="text" class="form-control form-control-sm" id="name"
-                                aria-describedby="nameAddon">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="lengthSurnameAddon">Longitud del apellido:</span>
-                        </div>
-                        <input type="text" class="form-control form-control-sm" id="lengthSurname"
-                            aria-describedby="lengthSurnameAddon">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="ageAddon">Edad:</span>
-                        </div>
-                        <input type="text" class="form-control form-control-sm" id="age" aria-describedby="ageAddon">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="monthString">Mes en letras:</span>
-                        </div>
-                        <input type="text" class="form-control form-control-sm" id="monthString"
-                            aria-describedby="basic-addon3">
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
     <footer class="footer">
         <div class="copyright">
