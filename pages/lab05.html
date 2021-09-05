@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laboratorio 5</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/all.min.css">
+    <link rel="stylesheet" href="/styles/estilopersonal.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="container_nav">
+        <nav class="container_nav navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="col-4">
+                    <a class="navbar-brand" href="#">hramirezq</a>
+                </div>
+                <div class="col-8 nav_items">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse nav_items navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link" href="/pages/about.html">About</a>
+                            <a class="nav-link" href="/pages/contact.html">Contact</a>
+                            <a class="nav-link" href="/pages/lab05.html">Laboratorio 5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="row" style="padding-bottom: 5%;">
+            <div class="text-align-center">
+                <h3>LAB 05: TALLER DE JAVASCRIPT</h3>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="fullnameAddon">Apellidos y nombres:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm" id="fullname"
+                                aria-describedby="fullnameAddon" placeholder="Ingrese sus nombres y apellidos">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="dateBirthAddon">Fecha de nacimiento:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm" id="dateBirth"
+                                aria-describedby="dateBirthAddon" placeholder="Ingrese su fecha de nacimiento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <button id="pull" type="button" class="btn btn-warning">Extraer</button>
+                    </div>
+                    <div class="col-6">
+                        <button id="color" type="button" class="btn btn-danger">Colorear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 5%;">
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="firstSurnameAddon">Apellidos paterno:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm" id="secondSurname"
+                                aria-describedby="firstSurnameAddon">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="secondSurnameAddon">Apellidos materno:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm" id="secondSurname"
+                                aria-describedby="secondSurnameAddon">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="nameAddon">Nombres:</span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm" id="name"
+                                aria-describedby="nameAddon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="lengthSurnameAddon">Longitud del apellido:</span>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="lengthSurname"
+                            aria-describedby="lengthSurnameAddon">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="ageAddon">Edad:</span>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="age" aria-describedby="ageAddon">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="monthString">Mes en letras:</span>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="monthString"
+                            aria-describedby="basic-addon3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            <p>© 2021 Hramirezq</p>
+        </div>
+        <div class="social_links">
+            <a target="_blank" href="mailto:hramirezq14@gmail.com">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a target="_blank" href="www.linkedin.com/in/hramirezq">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://github.com/hramirezq">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://t.me/hramirezq">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
